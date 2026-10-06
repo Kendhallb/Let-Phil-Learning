@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex; /*takes up whole screen*/
+    justify-content: center; /*centers div*/
+    align-items: center; /*centers div*/
+    height: 100vh; /*height of browser*/
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    box-sizing: border-box; /*made box size to 250px*/
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* -The box model consists of content, padding, border and margain.
+   -Box-sizing: border-box; ensures width and height include padding and border.
+   -Margains create outer space, while padding creates inner space.
+   -Borders wrap around elements and can have different styles.
+   -Box shadow add depth for a modern look.*/

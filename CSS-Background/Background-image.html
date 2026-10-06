@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        /* copy image address if you want to use image from internet */
+        .bg-image {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaueOR2Uj9WJGqpIuuyALbRIpV7_FQy0CSDIdn6mbyjj2euEWJI_r6IoY&s=10");
+            height: 3000px;
+            background-size: cover;
+            background-position: center; /*position options = left top, center center, right bottom */
+            color: white
+        }
+
+        .bg-cover {
+            background-size: cover;
+        }
+
+        .bg-contain {
+            background-size: contain;
+        }
+
+        /* repeating controls image tiling */
+        /* repeat = repeats both directions, repeat-x = horizontally, repeat-y = vertically, no-repeat = none*/
+
+        .bg-no-repeat{
+            background-repeat: no-repeat;
+        }
+
+        .bg-repeat {
+            background-repeat: repeat;
+        }
+
+        /* attachment controls when scrolling page */
+        /* ex) scroll - moves with page scroll, fixed - stays in one place, local - moves within elements content */
+
+        .bg-scroll {
+            background-attachment: scroll;
+        }
+
+        .bg-fixed {
+            background-attachment: fixed;
+        }
+
+        /* gradiants: linear-gradiant = left to right, radial-gradiant = circular*/
+
+        .gradiant {
+            background: linear-gradient(to right, red, blue); /*radial-gradiant (circle, red, blue) */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-image bg-cover bg-no-repeat bg-fixed">Background Image</div>
+</body>
+</html>

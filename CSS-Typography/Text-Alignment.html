@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Text Alignment</title>
+        <style>
+            .left {
+                text-align: left;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .right {
+                text-align: right;
+            }
+
+            .spacing {
+                line-height: 1.8; /*1.8 times font-size*/
+            }
+
+            .letter-spacing {
+                letter-spacing: 2px;
+            }
+
+            .word-spacing {
+                word-spacing: 10px;
+            }
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            .lowercase {
+                text-transform: lowercase;
+            }
+
+            .capitalize {
+                text-transform: capitalize;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            .line-through {
+                text-decoration: line-through;
+            }
+
+            /* no-decoration can remove decoration when added to class */
+            .no-decoration {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="left">left alignment</p>
+        <p class="center">center alignment</p>
+        <p class="right">right alignment</p>
+        <br />
+        <br />
+        <br />
+        <p class="spacing letter-spacing word-spacing">hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world</p>
+        <br />
+        <br />
+        <br />
+        <p class="uppercase">uppercase</p>
+        <p class="lowercase">LOWERCASE</p>
+        <p class="capitalize">capitalize</p>
+        <br />
+        <br />
+        <br />
+        <p class="underline">underlined</p>
+        <p class="line-through">line through</p>
+        <p class="no-deoration">no decoration</p>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!-- Static = (default) Normal flow, no positioning -->
+<!-- Relative = Moves relative to its normal position-->
+<!-- Absolute = Moves relative to the nearest positioned ancestor -->
+<!-- Fixed = Stays fixed on screen -->
+<!-- Sticky = Sticks when scrolling past a pont, usually used for navigation bars-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positioning</title>
+        <style>
+            .static {
+                position: static;
+            }
+
+            .relative {
+                position: relative;
+                /* top: 20px; */
+                left: 30px;
+            }
+
+            .parent {
+                position: relative;
+                width: 300px;
+                height: 1000px;
+                background-color: lightgray;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 20px;
+                left: 50px;
+                background-color: lightcoral;
+            }
+
+            .fixed {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background-color: yellow;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 0;
+                background-color: lightgreen;
+                padding: 10px;
+            }
+
+            .box {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            }
+
+            /* z-index creates the layers */
+            .one {
+                background-color: red;
+                z-index: 1;
+            }
+
+            .two {
+                background-color: blue;
+                z-index: 2;
+                top: 20px;
+                left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <header class="sticky">I am sticky</header>
+        <p class="static">I am static</p>
+        <div class="relative">I am relative</div>
+        <div class="fixed">I am fixed</div>
+
+        <div class="parent">
+            <div class="absolute">I am absolute</div>
+        </div> -->
+
+        <div class="box one">box one</div> 
+        <div class="box two">box two(above)</div>
+    </body>
+</html>

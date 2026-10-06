@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Combinators CSS Selectors</title>
+        <!-- Targets all elements with specific tag directly within another tag -->
+        <style>
+            /* Targets all <p> elements within a <div> */
+                
+            /* div p {
+                color: green;
+            } */
+
+            /* Targets direct child elements */
+            /* (uses > symbol) */
+
+            /* div > p {
+                color: blue;
+            } */
+
+        /* Targets <p> immediately following an <h2> */
+            /* (+ symbol to target directly after)
+                (~ symbol to target all following) */
+
+            /* h2 + p {
+                color: purple;
+            } */
+
+            h2 ~ p {
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div>
+            <p>this is a div</p>
+            <p>this is a div</p>
+        </div> 
+        <p>this is outside div tag, so its not green</p> -->
+
+
+        <!-- <div>
+            <p>Direct Child</p>
+            <section>
+                <p>Not Direct Child</p>
+            </section>
+        </div> -->
+
+        <h2>heading</h2>
+        <p>first paragraph</p>
+        <p>sceond paragraph</p>
+        </body>
+</html>
