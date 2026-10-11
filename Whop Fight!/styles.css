@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body {
+    font-family: Silkscreen;
+}
+
+.game-screen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background-image: url("Red\ light\ district.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.game-ui {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    color: white;
+}
+
+.health-bar {
+    width: 500px;
+    height: 20px;
+    background-color: gray;
+    border: 3px solid white;
+}
+
+.health {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    transition: width 0.2s;
+}
+
+.health.low {
+    background-color: red;
+}
+
+.player1-ui {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.player2-ui {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.vs {
+    margin-top: 15px;
+    font-size: 50px;
+    color: yellow;
+}
+
+.player-name {
+    color: yellow;
+}
+
+.arena {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.floor {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgb(24, 5, 1), rgb(109, 27, 27)); 
+    z-index: 2;
+}
+
+button {
+    background-color: rgb(245, 179, 57);
+    color: black;
+    border: 5px solid black;
+    padding: 5px 25px;
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: red;
+}
+
+.player2 {
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.player1 img{
+    height: 310px;
+    width: auto;
+}
+
+.player1 {
+    transform: translateY(-25px);
+    margin-left: 10px;
+}
+
+.fight {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+    font-size: 100px;
+    color: white;
+}
